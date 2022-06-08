@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Grandstander:wght@500&family=Inder&family=Indie+Flower&family=Righteous&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+#first_section{
+    width: 100%;
+    height: 120vh;
+    /* background-color: aqua; */
+}
+#first_section #header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    /* background-color: aquamarine; */
+}
+#first_section #header .logo{
+    width: 80px;
+    height: 60px;
+}
+#first_section #header ul{
+    width: 40%;
+    height: 50px;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#first_section #header ul .icon{
+    width: 30px;
+    height: 30px;
+}
+#first_section #header ul a {
+    font-size: 20px;
+    font-family: 'Inder', sans-serif;
+    font-weight: bold;
+    color: black;
+    
+}
+#first_section #intro{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+
+}
+#first_section #intro h1{
+    font-size: 50px;
+    font-family: 'Aladin', cursive;
+}
+#first_section #intro h4{
+    font-family: 'Inder', sans-serif;
+}
+#first_section .mypic{
+    position: relative;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 500px;
+    transition: 0.2s ease-in-out;
+    /* width: calc(400px * 2);
+    height: calc(500px * 2); */
+}
+
+#second_section{
+    width: 100%;
+    height: 70vh;
+    background-color: #F8BC32;
+}
+#second_section #about_section{
+    width: 100%;
+    height: 180px;
+    /* background-color: aqua; */
+    position: relative;
+    top: 35%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20%;
+    
+}
+#second_section #about_section h1{
+    font-family: 'Aladin', cursive;
+    letter-spacing: 4px;
+    font-size: 50px;
+}
+#second_section #about_section p{
+    text-align: justify;
+    font-family: 'Inder', sans-serif;
+}
+#second_section #about_section h3{
+    font-family: 'Inder', sans-serif;
+    font-weight: lighter;
+}
+#second_section #about_section h1, h3, p{
+    color: white;
+}
+
+#art_section {
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+}
+#art_section {
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    padding-top: 40px;
+}
+#art_section #art_lable{
+    width: 100%;
+    height: 70px;
+    /* background-color: beige; */
+    padding-left: 50px;
+    padding-top: 5px;
+
+}
+#art_section #art_lable h1{
+    font-family: 'Righteous', cursive;
+    letter-spacing: 4px;
+    font-size: 50px;
+}
+#art_section .hori{
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#art_section .verti{
+    width: 280px;
+    height: 250px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#art_section #art_container .hori:hover{
+    width: 180px;
+    height: 230px;
+}
+#art_section #art_container .verti:hover{
+    width: 260px;
+    height: 230px;
+}
+
+#art_section img{
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+}
+#art_section #art_container{
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    position: relative;
+}
+#art_section button{
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background-color: #F28500;
+    color:white;
+    font-family: 'Inder', sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+#art_section button a{
+    color: white;
+}
+#art_section button:hover{
+    background-color: #F8BC32;
+    transition: 0.4s ease-in;
+}
+#art_section #art_container .funtion1, .funtion4{
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top:10px;
+    z-index: 3;
+    display: none;
+    transition: 1s ease-in;
+    cursor: pointer;
+}
+#art_section #art_container .funtion2, .funtion3{
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    top:10px;
+    z-index: 3;
+    display: none;
+    transition: 1s ease-in;
+    cursor: pointer;
+}
+
+#art_section .black{
+    width: 100%;
+    height: 300vh;
+    position: absolute;
+    top: 20vh;
+    background-color:rgba(0,0,0,0.5);
+    z-index: 2;
+    display: none;
+
+    /* cursor: pointer; */
+}
+
+#footer {
+    width: 100%;
+    height: 90vh;
+    background-color: #F28500;
+}
+
+#footer #lets_chat{
+    width: 70%;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer #lets_chat h1{
+    color: white;
+    font-size: 40px;
+}
+#footer #footer_content{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: -10px;
+    background-color: #F28500;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#footer #footer_content p{
+    color: white;
+    font-family: 'Inder', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+/* #footer #footer_content #p{
+    background-color: aqua;
+} */
+#footer #footer_content #icons{
+    width: 200px;
+
+    height: 100px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer #footer_content #icons .icon2{
+    width: 40px;
+    height: 40px;
+    transition: .3s ease-in-out;
+}
+
+#footer #footer_content #icons .icon2:hover{
+    width: 45px;
+    height: 45px;
+}
